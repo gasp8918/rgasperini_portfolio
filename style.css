@@ -1,7 +1,7 @@
 
 /*coolors colors: #333333 #494949 #BFB6BB #28AFB0 #598B2C*/
 
-* {
+* { /*W3Schools told me to put this here*/
     box-sizing: border-box;
 }
 
@@ -23,17 +23,20 @@ h1 {
 }
 
 hr {
-    border-color: #365818;
+    border-color: #346b00;
     border-width: 2px;
     border-style: solid;
     margin-left: 10%;
     margin-right: 10%;
 }
 
+p {
+    margin-bottom: 5vh;
+}
+
 #topline {
-    margin-left: 2vw;
-    margin-right: 2vw;
-    border-color: #365818;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #header {
@@ -61,6 +64,15 @@ hr {
 #projects {
     /* background-color: purple; */
 }
+
+.invis {
+    filter: opacity(0.1);
+    border-color: #ffffff;
+    border-width: 1px;
+    margin-left: 10vh;
+    margin-right: 10vh;
+}
+
 
 .section {
     margin-right: 5vw;
