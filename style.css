@@ -1,9 +1,9 @@
 
 /*coolors colors: #333333 #494949 #BFB6BB #28AFB0 #598B2C*/
 
-* { /*W3Schools told me to put this here*/
+/*  { /*W3Schools told me to put this here
     box-sizing: border-box;
-}
+ } */
 
 body {
     font-family: monospace;
@@ -22,8 +22,20 @@ h1 {
     font-size: 4rem;
 }
 
+h2 {
+    text-align: center;
+    margin-top: 2vh;
+}
+
+h6 {
+    text-align: center;
+    font-weight: 100;
+    color: #c5c5c5;
+    margin: 0;
+}
+
 hr {
-    border-color: #346b00;
+    border-color: #38640f;
     border-width: 2px;
     border-style: solid;
     margin-left: 10%;
@@ -32,6 +44,10 @@ hr {
 
 p {
     margin-bottom: 5vh;
+}
+
+a {
+    color: #38640f;
 }
 
 #topline {
@@ -47,22 +63,10 @@ p {
 }
 
 #main {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: column;
-    background-color: green;
     column-count: 2;
+    display: grid;
     width: 100%;
     height: 100%;
-}
-
-#aboutme {
-    /* background-color: red; */
-    margin-top: 5vh;
-}
-
-#projects {
-    /* background-color: purple; */
 }
 
 .invis {
@@ -70,11 +74,18 @@ p {
     border-color: #ffffff;
     border-width: 1px;
     margin-left: 10vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
     margin-right: 10vh;
 }
 
 
 .section {
+    grid-column: 1 1;
+    display: block;
+    margin-top: 5vh;
+    /* background-color: red; */
+    flex-basis: 40vw;
     margin-right: 5vw;
     margin-left: 5vw;
     width: 90vw;
@@ -91,3 +102,34 @@ p {
     margin-right: 1vw;
 }
 
+@media (min-width: 900px) {
+
+    .section {
+        width: 40vw;
+    }
+
+    #aboutme {
+        width: 90vw;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 5vh;
+    }
+    
+    #projects {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        /* background-color: purple; */
+    }
+    
+    #hobbies {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        /* background-color: purple; */
+    }
+
+    #sports {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+}
