@@ -1,17 +1,13 @@
 
 /*coolors colors: #333333 #494949 #BFB6BB #28AFB0 #598B2C*/
 
-/*  { /*W3Schools told me to put this here
-    box-sizing: border-box;
- } */
-
-body {
+body { 
     font-family: monospace;
     font-weight: bold;
     font-size: 1.4rem;
     color: whitesmoke;
     background-color: #333333;
-    background-image: linear-gradient(20rad,#333333,#3a3a3a);
+    background-image: linear-gradient(20rad,#333333,#3a3a3a); 
     background-repeat:round;
 }
 
@@ -42,31 +38,16 @@ hr {
     margin-right: 10%;
 }
 
-p {
-    margin-bottom: 5vh;
-}
-
 a {
     color: #38640f;
 }
 
-#topline {
-    margin-left: 5vw;
-    margin-right: 5vw;
+ul {
+    text-align: center;
 }
 
-#header {
-    /* background-color: purple; */
-    height: 25%;
-    margin: -1vh;
-    text-align: left;   
-}
-
-#main {
-    column-count: 2;
-    display: grid;
-    width: 100%;
-    height: 100%;
+p {
+    margin-bottom: 1vh;
 }
 
 .invis {
@@ -79,6 +60,9 @@ a {
     margin-right: 10vh;
 }
 
+.aboutp {
+    margin-bottom: 5vh;
+}
 
 .section {
     grid-column: 1 1;
@@ -102,10 +86,48 @@ a {
     margin-right: 1vw;
 }
 
+.smaller {
+    margin-top: 0;
+    font-size: 0.9rem;
+}
+
+.smallest {
+    margin-top: 0;
+    font-size: 0.8rem;
+}
+
+#topline {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+#header {
+    /* background-color: purple; */
+    height: 25%;
+    margin: -1vh;
+    text-align: left;   
+}
+
+#main {
+    column-count: 2;
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
 @media (min-width: 900px) {
+    
+    li {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 
     .section {
         width: 40vw;
+    }
+
+    #abouthr {
+        display: none;
     }
 
     #aboutme {
